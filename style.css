@@ -1,12 +1,146 @@
-<style>
-h2{
-    color:red;
+
+.thumnail_grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
+
+.thumnail{
+    width:100%;
+}
+
+#stat_bar{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.stat{
+    text-align:center;
+}
+
+.circle_pic{
+    border: solid white 1px;
+    border-radius: 50%;
+
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.profile_pic{
+    width: 65px;
+    height: 65px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.highlight_pic{
+    width: 45px;
+    height: 45px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#highlight_area{
+    display: grid;
+    grid-template-columns: 55px 55px 1fr;
+}
+
 .highlight{
-    border:solid;
+    text-align: center;
 }
+
 #profile{
-    border:solid;
-    border-color:blue;
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
 }
-</style>
+
+#profile_info{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    height: 50px;
+}
+
+#id{
+    font-size: 25px;
+    font-weight: 120;
+}
+
+button{
+    height: 100%;
+    width: 95%;
+
+    font-size:12px;
+    background-color: white;
+    border: solid gray 1px;
+    border-radius: 3px;
+}
+
+#top{
+    display: grid;
+    grid-template-columns: 4fr 7fr 4fr;
+    height: 45px;
+
+    border-bottom: solid gray 0.1px;
+    margin-bottom: 10px;
+}
+
+#top img{
+    margin-left: 0;
+    margin-right: auto;
+
+    height: 70%;
+    object-fit: contain;
+}
+
+#top input{
+    height: 50%;
+    width: 70%;
+
+    margin-left: 20;
+    margin-right: auto;
+    margin-top: 5;
+    margin-bottom: 1;
+
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+
+    border: solid gray 1px;
+    border-radius: 3px;
+
+    font-size: 17px;
+    font-weight: 100;
+}
+
+i{
+    color: gray;
+}
+#top i{
+    font-size: 25px;
+}
+#top div{
+    text-align: center;
+    padding-top: 8px;
+}
+
+#sub_icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    text-align: center;
+    font-size: 15px;
+
+    height: 30px;
+}
+
+.selected{
+    border-bottom: solid gray 3px;
+}
